@@ -4,17 +4,17 @@
 Значение каждого элемента последновательности не превышает 1000. Количество элемнтов
 последовательности не превышает 10000.
 '''
+
 f = open('first.txt')
-kol = f.read(1)
+kol = int(f.read(1))
 arr = list(map(int, f.read().split()))
-sortArr = sorted(arr)
-minSum = sortArr[len(arr)-1] + sortArr[len(arr)-2]
-# print('Старый минимум', minSum)
 f.close()
-for i in range(len(arr)):
-    for j in range(len(arr)):
-        if abs(i-j) >= 4:
-            newMin = arr[i] + arr[j]
-            if newMin < minSum:
-                minSum = newMin
+sortArr = sorted(arr)
+minSum = sortArr[kol-1] + sortArr[kol-2]
+# print('Старый минимум', minSum)
+for i in range(kol-4):
+    for j in range(i+4, kol):
+        newMin = arr[i] + arr[j]
+        if newMin < minSum:
+            minSum = newMin
 print('Новый минимум', minSum)
