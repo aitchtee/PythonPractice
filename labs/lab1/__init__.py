@@ -15,11 +15,11 @@ print('Разные', a.difference(b))
 
 '''
 
-'''
 # вводится кол-во учеников, для каждого из них вводится кол-во языков и эти языки
 # вывести языки, которые знает хотя бы один ребенок
 # вывести языки, которые знают все
 
+'''
 firstStudent = 'eng fra rus'
 firstStudent = firstStudent.split()
 fullSet = set(firstStudent)
@@ -42,16 +42,18 @@ print('Знают все', resAllKnownSet)
 
 numOfDay = int(input())
 numOfParties = int(input())
+parties = []
 setOfDays = set()
-beginDay = set()
-periodDay = set()
-
-for i in range(numOfDay):
-    setOfDays.add(i+1)
 
 for i in range(numOfParties):
-    beginDay.add(int(input()))
-    periodDay.add(int(input()))
+    i += 1
 
-for i in range(numOfDay):
-    print()
+'''
+1 11 21 1211 111221 312211 13112221 1113213211
+'''
+
+findNum = int(input())
+s = 1
+currentNum = 1
+while currentNum <= findNum:
+    currentNum += 1
