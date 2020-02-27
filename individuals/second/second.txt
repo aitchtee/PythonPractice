@@ -1,0 +1,17 @@
+3
+NewYork 20
+Florida 25
+Pennsylvania 23
+Florida Gore
+Pennsylvania Gore
+Florida Bush
+NewYork Bush
+NewYork Gore
+Pennsylvania Gore
+Pennsylvania Bush
+Florida Gore
+Pennsylvania Gore
+Florida Bush
+Pennsylvania Gore
+Florida Bush
+Pennsylvania Gore
