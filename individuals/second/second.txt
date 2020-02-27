@@ -1,8 +1,10 @@
-3
+4
+Washington 15
 NewYork 20
 Florida 25
 Pennsylvania 23
 Florida Gore
+Washington Clinton
 Pennsylvania Gore
 Florida Bush
 NewYork Bush

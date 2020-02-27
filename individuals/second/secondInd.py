@@ -66,4 +66,10 @@ for i in range(int(stateNum)):
         curState = list(statesVoteCountDict.keys())[i]
         voices = stateVoicesDict[curState]
         resDict[list(statesVoteCountDict.values())[i]] = int(resDict.get(list(statesVoteCountDict.values())[i])) + int(voices)
-print(resDict)
+# print(resDict)
+# сортировка результирующего словаря
+list_d = list(resDict.items())
+list_d.sort(key=lambda i: int(i[1]), reverse=True)
+# print(dict(list_d))
+for i in list_d:
+    print(i[0], i[1])
