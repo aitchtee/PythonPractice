@@ -1,6 +1,7 @@
 import os
 import sqlite3
 import json
+import pprint
 
 filename = 'mydb.db'
 create = not os.path.exists(filename)
@@ -22,7 +23,7 @@ if create:
                    "FOREIGN KEY(style_id) REFERENCES styles(id))")
     db.commit()
 
-cursor = db.cursor()
+# cursor = db.cursor()
 # cursor.execute("INSERT INTO crews(crew_name) VALUES ('No Team')")
 # cursor.execute("INSERT INTO crews(crew_name) VALUES ('Jabbawockeez')")
 # cursor.execute("INSERT INTO crews(crew_name) VALUES ('Kinjaz')")
@@ -36,7 +37,8 @@ cursor = db.cursor()
 # cursor.execute("INSERT INTO dancers(crew_id, style_id, dancer_name) VALUES(1, 1, 'Taylor Hatala')")
 # cursor.execute("INSERT INTO dancers(crew_id, style_id, dancer_name) VALUES(2, 3, 'Ben Chung')")
 # cursor.execute("INSERT INTO dancers(crew_id, style_id, dancer_name) VALUES(2, 1, 'Phil Tayag')")
-db.commit()
+# cursor.execute("INSERT INTO dancers(crew_id, style_id, dancer_name) VALUES(3, 1, 'Anthony Lee')")
+# db.commit()
 
 cursor2 = db.cursor()
 cursor2.execute("SELECT d.id, c.crew_name, s.style_name, d.dancer_name FROM dancers d "
@@ -45,6 +47,7 @@ cursor2.execute("SELECT d.id, c.crew_name, s.style_name, d.dancer_name FROM danc
 # cursor2.execute("select * from dancers ORDER BY id")
 
 records = cursor2.fetchall()
+# pprint.pprint(records)
 res = {}
 resList = []
 for i, record in enumerate(records):
@@ -56,3 +59,10 @@ for i, record in enumerate(records):
 
 with open("data_file.json", "w") as write_file:
     json.dump(resList, write_file, indent=4)
+
+
+with open("data_file.json", "r") as read_file:
+    dancersList = json.load(read_file)
+# pprint.pprint(dancersList)
+print("\r\n")
+# pprint.pprint(dancersList[0])

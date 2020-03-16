@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "crew_name": "Jabbawockeez",
+        "style_name": "Breaking",
+        "dancer_name": "Steven Lor"
+    },
+    {
+        "id": 2,
+        "crew_name": "No Team",
+        "style_name": "Popping",
+        "dancer_name": "Dytto"
+    },
+    {
+        "id": 3,
+        "crew_name": "No Team",
+        "style_name": "Hip-Hop",
+        "dancer_name": "Taylor Hatala"
+    },
+    {
+        "id": 4,
+        "crew_name": "Jabbawockeez",
+        "style_name": "Breaking",
+        "dancer_name": "Ben Chung"
+    },
+    {
+        "id": 5,
+        "crew_name": "Jabbawockeez",
+        "style_name": "Hip-Hop",
+        "dancer_name": "Phil Tayag"
+    },
+    {
+        "id": 6,
+        "crew_name": "Kinjaz",
+        "style_name": "Hip-Hop",
+        "dancer_name": "Anthony Lee"
+    }
+]

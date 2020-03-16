@@ -60,18 +60,21 @@ print(setOfDays)
 # Вам известно за кого проголосовал каждый штат и сколько голосов было отдано данным штатом.
 # Подведите итоги выборов: для каждого из участников голосования определите число отданных за него голосов.
 
-f = open('lab.txt')
-lines = f.readlines()
-f.close()
-resDict = {}
-for line in lines:
-    if line.rstrip().split()[0] not in resDict:
-        resDict[line.rstrip().split()[0]] = line.rstrip().split()[1]
-    else:
-        resDict[line.rstrip().split()[0]] = int(resDict.get(line.rstrip().split()[0])) + int(line.rstrip().split()[1])
-for key in sorted(resDict):
-    print(key, resDict[key])
+# f = open('lab.txt')
+# lines = f.readlines()
+# f.close()
+# resDict = {}
+# for line in lines:
+#     if line.rstrip().split()[0] not in resDict:
+#         resDict[line.rstrip().split()[0]] = line.rstrip().split()[1]
+#     else:
+#         resDict[line.rstrip().split()[0]] = int(resDict.get(line.rstrip().split()[0])) + int(line.rstrip().split()[1])
+# for key in sorted(resDict):
+#     print(key, resDict[key])
 
 # 1 11 21 1211 111221 312211 13112221 1113213211
+
+import cgi
+import html
 
 
