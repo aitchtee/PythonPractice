@@ -47,7 +47,7 @@ cursor2.execute("SELECT d.id, c.crew_name, s.style_name, d.dancer_name FROM danc
 # cursor2.execute("select * from dancers ORDER BY id")
 
 records = cursor2.fetchall()
-# pprint.pprint(records)
+pprint.pprint(records)
 res = {}
 resList = []
 for i, record in enumerate(records):

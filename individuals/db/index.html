@@ -9,12 +9,16 @@
 <body>
     <form action="/cgi-bin/form.py">
         <input type="text" name="TEXT_1">
-        <input type="text" name="TEXT_2">
-        <!-- <select>
-            {% for i in range ids %}
-            <option> {{ i }} </option>
-            {% endfor %}
-        </select> -->
+        <select name="crewName">
+            <option id="crew1">1 - Без команды</option>
+            <option id="crew2">2 - Jabbawockeez</option>
+            <option id="crew3">3 - Kinjaz</option>
+        </select>
+        <select name="styleName">
+            <option id="style1">1 - Hip-Hop</option>
+            <option id="style2">2 - Popping</option>
+            <option id="style3">3 - Breaking</option>
+        </select>
         <input type="submit">
     </form>
 </body>
